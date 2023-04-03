@@ -1,0 +1,64 @@
+.toolbar {
+  padding: 0px 12px 0px 0px !important;
+  button {
+    background: unset;
+    border: unset;
+    mat-icon {
+      font-size: 15pt;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .user-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    border-radius: 5px;
+    margin: 0 0.25rem;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-inline-start: 10px;
+    img:first-child {
+      padding-inline-end: 10px;
+    }
+  }
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar-select {
+  text-transform: uppercase;
+  background-color: #005ce5;
+  border-radius: 25px;
+  width: 125px;
+  text-align: center;
+  padding: 5px;
+
+  ::ng-deep .mat-mdc-select-placeholder {
+    color: #fff !important;
+    font-weight: bold;
+  }
+
+  ::ng-deep .mat-mdc-select-arrow-wrapper {
+    margin-inline-end: 8px;
+    .mat-mdc-select-arrow svg {
+      fill: #fff;
+    }
+  }
+}
+
+::ng-deep
+  .mdc-text-field--filled:not(.mdc-text-field--disabled)
+  .mdc-line-ripple::before {
+  visibility: hidden;
+}
+
+@media (max-width: 900px) {
+  .tools-for-big-screens {
+    display: none;
+  }
+}

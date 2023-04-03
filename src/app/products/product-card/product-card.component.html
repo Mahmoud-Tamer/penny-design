@@ -1,0 +1,47 @@
+<div class="product-card">
+  <img
+    class="product-image"
+    [src]="'assets/images/svg/products/' + product.image"
+    alt=""
+  />
+  <div class="product-content">
+    <div class="flex">
+      <span class="product-status">In stock <mat-icon>done</mat-icon> </span>
+      <img
+        class="product-action-icon"
+        src="assets/images/svg/products/folder.svg"
+      />
+      <img
+        class="product-action-icon"
+        src="assets/images/svg/products/edit.svg"
+      />
+    </div>
+
+    <div class="product-name">{{ product.name }}</div>
+
+    <div class="flex flex-center">
+      <span class="product-code">{{ product.code }} </span>
+      <mat-icon class="details-icon">info</mat-icon>
+    </div>
+
+    <div class="prduct-price mt-1">
+      SAR &nbsp;<span class="prduct-price-value">{{ product.price }}</span
+      >.00
+    </div>
+
+    <button
+      class="card-btn text-center mt-2"
+      [ngClass]="{
+        'add-to-card-btn': !product.addedToCart,
+        'remove-btn': product.addedToCart
+      }"
+    >
+      <span class="flex-center" *ngIf="product.addedToCart; else addToCart">
+        <mat-icon>delete_forever</mat-icon> remove
+      </span>
+      <ng-template #addToCart>
+        <span>add</span>
+      </ng-template>
+    </button>
+  </div>
+</div>

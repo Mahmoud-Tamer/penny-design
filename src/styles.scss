@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "Aventa";
+  src: url("/assets/fonts/Aventa Light.otf");
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+*:not(mat-icon) {
+  font-family: "Aventa" !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.container {
+  background: #fff !important;
+  border: 1px solid #e4e7ec !important;
+  padding-right: unset !important;
+  padding-left: unset !important;
+  margin-right: unset !important;
+  margin-left: unset !important;
+}
+
+.grey-bg {
+  background-color: #f9fafb;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}

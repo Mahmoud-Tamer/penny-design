@@ -1,0 +1,131 @@
+.products-content {
+  padding-inline-end: 16px;
+}
+
+.header-container {
+  padding: 15px 22px !important;
+}
+
+.container {
+  padding: 15px 22px;
+  border: none !important;
+  border-radius: 12px;
+  margin-bottom: 4px;
+  max-width: unset !important;
+}
+
+.products-container {
+  padding-inline-start: 10px !important;
+}
+
+.title {
+  margin-bottom: 0.25rem;
+}
+
+.title,
+::ng-deep .mdc-evolution-chip__text-label {
+  font-weight: bold;
+}
+
+::ng-deep .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+  background-color: unset !important;
+}
+
+::ng-deep.mdc-evolution-chip__text-label {
+  color: #98a2b3 !important;
+}
+
+.passed-chip {
+  background-color: #006626 !important;
+  ::ng-deep .mdc-evolution-chip__text-label {
+    color: #fff !important;
+  }
+}
+
+.selected-chip {
+  background-color: #e6f0fe !important;
+  padding-inline-start: 4px;
+  ::ng-deep .mat-mdc-chip-graphic {
+    display: none;
+  }
+  .selected-number {
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    background-color: #005ce6;
+    display: inline-block;
+    color: #fff;
+  }
+}
+
+mat-tab-group {
+  ::ng-deep.mat-mdc-tab-header {
+    width: 500px;
+  }
+
+  ::ng-deep.mdc-tab {
+    text-align: center;
+    padding: 0px;
+    height: 40px;
+  }
+
+  ::ng-deep .mdc-tab--active {
+    background-color: #f2f4f7 !important;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  ::ng-deep .mdc-tab-indicator {
+    display: none !important;
+  }
+
+  ::ng-deep.mat-mdc-tab-body-content {
+    padding: 0.5rem 0;
+  }
+
+  ::ng-deep .mat-mdc-tab-body-wrapper {
+    border-top: 1px solid #d0d5dd;
+  }
+}
+
+.tab-title {
+  margin-inline-start: 10px;
+  font-size: 16px;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.shopping-cart {
+  min-height: 500px;
+  .cart-header {
+    padding: 8px 14px;
+    border-bottom: 1px solid #d0d5dd;
+    .cart-title {
+      font-weight: bold;
+      font-size: 20px;
+      flex: 1;
+    }
+  }
+  .cart-empty-msg,
+  .cart-icon {
+    color: #98a2b3;
+    font-size: 36px;
+    height: auto !important;
+    width: auto !important;
+  }
+  .cart-empty-msg {
+    font-size: 36px;
+    font-weight: bold;
+    display: contents;
+  }
+
+  .cart-content {
+    height: 400px;
+    line-height: 35px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+  }
+}
